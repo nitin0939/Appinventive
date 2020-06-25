@@ -14,6 +14,15 @@ public class SingleObjectResponse extends ServiceResponse{
 	public void setMovie(MovieDTO movie) {
 		this.movie = movie;
 	}
+
+	public SingleObjectResponse(MovieDTO movie) {
+		super();
+		this.movie = movie;
+	}
+
+	public SingleObjectResponse() {
+		super();
+	}
 	
 	
 }

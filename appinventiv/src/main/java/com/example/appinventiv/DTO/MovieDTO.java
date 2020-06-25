@@ -46,5 +46,24 @@ public class MovieDTO {
 		return "MovieDTO [id=" + id + ", title=" + title + ", category=" + category + ", starRating=" + starRating
 				+ "]";
 	}
+	public MovieDTO(Long id, @NotNull(message = "category field is mandatory") String title,
+			@NotNull(message = "category field is mandatory") String category,
+			@NotNull @DecimalMin(value = "0.5", message = "star rating should not be less than 0.5") @DecimalMax(value = "5.0", message = "star rating should not greater than 5.0") Double starRating) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.category = category;
+		this.starRating = starRating;
+	}
+	public MovieDTO(@NotNull(message = "category field is mandatory") String title,
+			@NotNull(message = "category field is mandatory") String category,
+			@NotNull @DecimalMin(value = "0.5", message = "star rating should not be less than 0.5") @DecimalMax(value = "5.0", message = "star rating should not greater than 5.0") Double starRating) {
+		super();
+		this.title = title;
+		this.category = category;
+		this.starRating = starRating;
+	}
+	
+	
     
 }
