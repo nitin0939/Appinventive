@@ -64,6 +64,8 @@ public class MovieDTO {
 		this.starRating = starRating;
 	}
 	
-	
+	public MovieDTO() {
+		
+	}
     
 }
