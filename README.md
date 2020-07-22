@@ -36,3 +36,7 @@ curl --location --request PUT 'localhost:5000/api/update' \
 //Curl Request to get List of Movies
 
 curl --location --request GET 'localhost:5000/api/getMovies'
+
+use following command to execute test cases for all the API's:
+
+mvn test/mvn clean install
